@@ -4,7 +4,6 @@ This project is so fun! I am building this project as a submission criteria for 
 I have a list of acceptance criteria for this project that must be met.
 <br/>
 1.Create the HTML for this page ✅<br/>
-
 2.Style the elements on the page using CSS ✅<br/>
 3.Retrieve the data for the page using the Star Wars API (I'm not posting their full list of criteria for this ticket item, I'm not sure if they have a privacy policy for this)<br/>
 4.Provide a README file that includes instructions for running the page <br/>
