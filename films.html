@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Films</title>
-       <script src="https://kit.fontawesome.com/2745e261bc.js"></script>
+    <script src="https://kit.fontawesome.com/2745e261bc.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,24 +16,34 @@
   </head>
   <body>
     <div class="container">
-      <div class="btn-group" role="group" aria-label="Basic example">
+      <div
+        class="btn-group"
+        role="group"
+        aria-label="Basic example"
+        id="homebuttons"
+      >
         <a href="./films.html">
-          <button type="button" class="btn btn-warning">Films</button></a
+          <button type="button" class="btn btn-warning mx-2 fs-3">
+            Films
+          </button></a
         >
         <a href="./people.html"
-          ><button type="button" class="btn btn-warning">People</button></a
+          ><button type="button" class="btn btn-warning mx-2 fs-3">
+            People
+          </button></a
         >
         <a href="./planets.html"
-          ><button type="button" class="btn btn-warning">Planets</button></a
+          ><button type="button" class="btn btn-warning mx-2 fs-3">
+            Planets
+          </button></a
         >
-        <a href="/"> <button class="btn btn-danger">Go Home</button> </a>
+        <a href="/">
+          <button class="btn btn-danger mx-2 fs-3">Go Home</button>
+        </a>
       </div>
 
       <div id="buttons" class="text-center mb-5">
-        <label for="films" value="films">
-          <input type="button" id="films" autocomplete="off" />Click to view
-          people from Star Wars</label
-        >
+        Click to view people from Star Wars
       </div>
       <div id="results" class="card-columns"></div>
     </div>
