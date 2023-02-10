@@ -1,13 +1,16 @@
 /* I like to organize my CSS in a logical manner. I feel like this helps
 the cascade work in my favor and helps me easily locate changes I want to make.
 I like to do the body or HTML,then the elements, then divs, classes and media queries. */
-
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-size: 62.5%;
   background: url("./pexels-philippe-donn-1257860.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  box-sizing: border-box;
 }
 h1,
 h2 {
@@ -43,9 +46,21 @@ h4 {
 }
 
 .footer {
-  background-color: aqua;
-  height: 40px;
-  width: 80vw;
+  background-color: black;
+  color: white;
+  height: 20vh;
+  display: block;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+.footer > p {
+  font-size: 1.1rem;
+  padding: 12px;
+  text-align: center;
+}
+.footer > a {
+  text-decoration: wavy;
+  color: blueviolet;
 }
 #buttons {
   background-color: black;
