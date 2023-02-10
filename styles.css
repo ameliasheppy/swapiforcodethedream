@@ -7,6 +7,7 @@ body {
   background: url("./pexels-philippe-donn-1257860.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
 }
 h1,
 h2 {
@@ -28,7 +29,7 @@ h4 {
   font-size: 2rem;
 }
 .content {
-  background-color: purple;
+  background-color: grey;
   opacity: 0.7;
   border-radius: 12px;
   padding: 20px;
@@ -36,33 +37,39 @@ h4 {
 .content > p {
   font-size: 1.3rem;
   color: white;
+  font-weight: bolder;
   opacity: 1;
   text-align: center;
 }
+
 .footer {
   background-color: aqua;
   height: 40px;
   width: 80vw;
 }
 #buttons {
-  background-color: lightgoldenrodyellow;
+  background-color: black;
   border-radius: 12px;
-  width: 80vw;
+  width: 60vw;
   height: 10vh;
   display: block;
   margin: auto;
   margin-top: 30px;
+  font-size: 2rem;
+  opacity: 0.6;
 }
 #homebuttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  opacity: 0.6;
 }
 #results {
   color: black;
   box-shadow: white;
 }
-@media (min-width: 200px) and (max-width: 560px) {
+@media (min-width: 200px) and (max-width: 559px) {
   h1 {
     font-size: 3rem;
   }
@@ -74,5 +81,25 @@ h4 {
   }
   p {
     font-size: 1.2rem;
+  }
+  #buttons {
+    height: 160px;
+  }
+}
+@media (min-width: 560px) and (max-width: 1116px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  #buttons {
+    height: 110px;
   }
 }

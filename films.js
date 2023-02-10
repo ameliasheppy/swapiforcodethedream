@@ -15,6 +15,7 @@ function showResults(data) {
 
   data.results.forEach((item) => {
     userCanSee += `
+
 <div class = "card p-3 m-3" style = "opacity:0.8">
 <h4 class"card-title text-center">${item.title}</h4>
 <div class ="card-content">
@@ -22,6 +23,7 @@ function showResults(data) {
 <span style = "text-decoration:underline">Director:</span>${item.director} <br>
 <span style = "text-decoration:underline">Release Date:</span>${item.release_date} <br>
 <span>Opening Crawl:</span>${item.opening_crawl} <br>
+
 
 </div>
 </div>
