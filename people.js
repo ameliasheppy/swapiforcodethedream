@@ -18,8 +18,8 @@ function showResults(data) {
 <div class = "card p-3 m-3" style = "opacity:0.8">
 <h4 class"card-title text-center">${item.name}</h4>
 <div class ="card-content">
-<span style = "text-decoration:underline">Home world:</span>${item.homeworld} <br>
-<span style = "text-decoration:underline">Birth Year:</span>${item.birth_year} <br>
+<span style = "text-decoration:underline; font-size:1.3rem">Home world: ${item.homeworld}</span> <br>
+<span style = "font-size:1.2rem">Birth Year: ${item.birth_year} </span><br>
 </div>
 </div>
             `;
@@ -27,6 +27,8 @@ function showResults(data) {
 
   results.innerHTML = userCanSee;
 }
+
+
 
 //event listener for buttons
 document.querySelector("#buttons").addEventListener("click", (e) => {

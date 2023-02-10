@@ -19,10 +19,10 @@ function showResults(data) {
 <div class = "card p-3 m-3" style = "opacity:0.8">
 <h4 class"card-title text-center">${item.title}</h4>
 <div class ="card-content">
-<span style = "text-decoration:underline">Producer:</span>${item.producer} <br>
-<span style = "text-decoration:underline">Director:</span>${item.director} <br>
-<span style = "text-decoration:underline">Release Date:</span>${item.release_date} <br>
-<span>Opening Crawl:</span>${item.opening_crawl} <br>
+<span style = "text-decoration:underline; font-size:1.3rem">Producer: ${item.producer}</span> <br>
+<span style = "font-size:1.2rem">Director: ${item.director}</span> <br>
+<span style = "font-size:1.2rem">Release Date: ${item.release_date}</span> <br>
+<span style = "font-size:1.2rem">Opening Crawl: <br/> ${item.opening_crawl}</span> <br>
 
 
 </div>
