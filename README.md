@@ -10,3 +10,4 @@ I have a list of acceptance criteria for this project that must be met.
 
 Once I created the basic HTML, CSS, and JS files, I then began looking into the acceptance criteria for the JS portion. Specifically, what should be included in my fetch requests to show on the pages. I wanted to test to see what info the API would return, so I used Postmand to see what code is being returned for me to work with. 
 
+If you would like to use this repo, feel free to follow one of the below steps. You can either clone it into a file on your local computer (Option 1, with an arrow to the convenient copy button that Github provides), you can open it with Github Desktop (Option 2), or download the file onto your computer and work from it that way (Option 3). Honestly, they all work great! <img width="766" alt="howtoclone" src="https://user-images.githubusercontent.com/98853049/218218611-3f26cb52-5d90-4e88-adf6-12feef2e200f.png">
