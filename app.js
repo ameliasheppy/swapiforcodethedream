@@ -3,34 +3,32 @@
 
 const results = document.querySelector("#results");
 
-function swapiFetch() {
-  fetch("https://www.swapi.tech/api/films/")
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      //the below line of code needs fixed so that I can display more than one movie title at a time for the user.
-      document.querySelector("h4").innerText = data.result[0].properties.title;
-    })
-    .catch((err) => {
-      console.log(`error ${err}`);
+async function swapiFetch(value) {
+  const res = await fetch(`https://www.swapi.tech/api/${value}/`);
+  const data = await res.json();
+  console.log(data)
+  showResults(data, value);
+}
+
+function showResults(data, value) {
+  let userCanSee = "";
+  console.log(data);
+  if (value === "films") {
+    data.results.forEach((item) => {
+      userCanSee += `
+<div class = "card p-3 m-3" style = "opacity:0.9">
+<h4 class"card-title text-center:>${item.title}</h4>
+<div class ="card-content">
+<span style = "text-decoration:underline">Producer</span>:${item.producer}
+</div>
+</div>
+            `;
     });
+  }
+  results.innerHTML = userCanSee;
 }
 
 //event listener for buttons
-document.querySelector("#filmButton").addEventListener("click", (e) => {
+document.querySelector("#buttons").addEventListener("click", (e) => {
   swapiFetch(e.target.textContent.trim().toLowerCase());
 });
-document.querySelector("#peopleButton").addEventListener("click", (e) => {
-  swapiFetch(e.target.textContent.trim().toLowerCase());
-});
-document.querySelector("#planetsButton").addEventListener("click", (e) => {
-  swapiFetch(e.target.textContent.trim().toLowerCase());
-});
-document.querySelector("#vehicleButton").addEventListener("click", (e) => {
-  swapiFetch(e.target.textContent.trim().toLowerCase());
-});
-// fetch("https://www.swapi.tech/api/planets/1/")
-//   .then((res) => res.json())
-//   .then((data) => console.log(data))
-//   .then(() => console.log())
-//   .catch((err) => console.error(err));
